@@ -1,5 +1,5 @@
-.cols-30 {
-  grid-template-columns: repeat(30, minmax(0, 1fr));
+.cols-20 {
+  grid-template-columns: repeat(20, minmax(0, 1fr));
 }
 
 .border-tiny {

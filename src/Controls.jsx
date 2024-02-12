@@ -1,15 +1,24 @@
-import Button from "./Button"
+import Button from "./Button";
 
-export default function Controls({nextTurn}) {
-
-    
-    return (
-        <div className="h-[20vh] bg-gray-500 flex justify-center gap-4 items-center flex-wrap">
-            <Button text="EXPLANATION" method={nextTurn} />
-            <Button text="LEXICON" method={nextTurn} />
-            <Button text="START" method={nextTurn} />
-            <Button text="NEXT" method={nextTurn} />
-            <Button text="RESET" method={nextTurn} />
-        </div>
-    )
+export default function Controls({
+  nextTurn,
+  resetState,
+  startPlaying,
+  stopPlaying,
+  playing,
+}) {
+  return (
+    <div className="h-[20vh] w-full bg-gray-500 flex justify-center gap-4 items-center flex-wrap">
+      {/* <Button text="EXPLANATION" method={nextTurn} />
+            <Button text="LEXICON" method={nextTurn} /> */}
+      {!playing && (
+        <>
+          <Button text="⮌ RESET" method={resetState} />
+          <Button text="➤ START" method={startPlaying} />
+          <Button text="🠚 NEXT" method={nextTurn} />
+        </>
+      )}
+      {playing && <Button text="✋ STOP" method={stopPlaying} />}
+    </div>
+  );
 }
