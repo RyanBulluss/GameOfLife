@@ -1,5 +1,9 @@
-.cols-5 {
-  grid-template-columns: repeat(5, minmax(0, 1fr));
+.cols-30 {
+  grid-template-columns: repeat(30, minmax(0, 1fr));
+}
+
+.border-tiny {
+  border: solid gray 1px;
 }
 
 .App {
