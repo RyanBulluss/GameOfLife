@@ -11,7 +11,7 @@
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://yourusername.github.io/your-repository-name",
+  "homepage": "https://ryanbulluss.github.io/GameOfLife",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
